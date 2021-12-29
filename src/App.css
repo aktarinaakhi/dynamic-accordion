@@ -1,6 +1,28 @@
 .App {
+  font-family: sans-serif;
   text-align: center;
 }
+
+.item {
+  display: block;
+}
+.item > .children {
+  padding: 0 0 0 40px;
+}
+.item > .toggler {
+  display: inline-block;
+}
+
+.item::before {
+  content: '-';
+  padding: 0 5px 0 0;
+}
+
+
+
+
+
+
 
 .App-logo {
   height: 40vmin;
