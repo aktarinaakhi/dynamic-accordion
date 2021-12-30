@@ -1,0 +1,14 @@
+.item {
+  display: block;
+}
+.item > .children {
+  padding: 0 0 0 40px;
+}
+.item > .toggler {
+  display: inline-block;
+}
+
+.item::before {
+  content: '-';
+  padding: 0 5px 0 0;
+}

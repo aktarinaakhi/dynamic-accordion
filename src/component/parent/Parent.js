@@ -16,39 +16,33 @@ const Parent = () => {
         <div className='container mt-5'>
 
             <div className="accordion" id="accordionExample">
+                <div className="accordion-item">
+                    <h2 className="accordion-header" id="headingOne">
+                        <button
+                            className="accordion-button"
+                            type="button"
+                            data-mdb-toggle="collapse"
+                            data-mdb-target="#collapseOne"
+                            aria-expanded="true"
+                            aria-controls="collapseOne"
+                        >
+                            {/* Main Category = {item.name} */}
+                        </button>
+                    </h2>
+                    <div
+                        id="collapseOne"
+                        className="accordion-collapse collapse show"
+                        aria-labelledby="headingOne"
+                        data-mdb-parent="#accordionExample"
+                    >
+                        <div className="accordion-body">
 
-                
-
-                        <div className="accordion-item" key={pd._id} >
-                            <h2 className="accordion-header" id="headingOne">
-                                <button
-                                    className="accordion-button"
-                                    type="button"
-                                    data-mdb-toggle="collapse"
-                                    data-mdb-target="#collapseOne"
-                                    aria-expanded="true"
-                                    aria-controls="collapseOne"
-                                >
-                                    Main Category = {pd.name}
-                                </button>
-
-
-                            </h2>
-                            <div
-                                id="collapseOne"
-                                className="accordion-collapse collapse show"
-                                aria-labelledby="headingOne"
-                                data-mdb-parent="#accordionExample"
-                            >
-                                <div className="accordion-body">
-
-                                    {pd.descriptiopn}
-
-                                </div>
-
-                            </div>
+                            {/* {menuItemChildren} */}
                         </div>
-                 
+
+                    </div>
+                </div>
+
             </div>
 
         </div>
